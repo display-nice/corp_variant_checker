@@ -1,12 +1,10 @@
-# React + Vite
+# Corp_variant_checker (React + Vite)
+Данная публичная гитхаб-версия проекта представляет собой рафинированный,
+обезжиренный, абстрактный клон моего реального проекта. Публичная версия полностью очищена от
+коммерческой тайны (включая имена переменных).
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Реальный проект предназначен для прозрачности и проверки расчётов кастомного функционала по
+определённой бизнес-логике. Используется рядовыми пользователями и техподдержкой.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+CSS: модульная структура, БЭМ, Flexbox, Grid. Глобальные переменные для выбора
+цвета. Статичная вёрстка под десктопы. Не используется на малых экранах.
