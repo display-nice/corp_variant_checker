@@ -1,0 +1,73 @@
+@import "./variables.css";
+@import "./normalize.css";
+@import "./reboot.css";
+@import "./header.css";
+@import "./inputs.css";
+@import "./result.css";
+@import "./info.css";
+
+:root {
+	font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+	line-height: 1.5;
+}
+
+body {
+  background-color: var(--body-bg);
+  display: flex;
+  justify-content: center;
+}
+
+h1, h2, h3, h4 {
+  margin: 0;
+  padding: 0;
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.app {
+  width: 1280px;
+  margin: 0 auto;
+}
+.main {
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  padding: 20px;
+  gap: 20px;
+  background-color: var(--main-bg);
+  height: calc(100dvh - 45px);
+}
+
+.main__resultinfo-ctr {
+  grid-column: 2;
+  position: relative;
+}
+
+.inputs, .result, .info {
+  height: 85dvh;
+  background-color: var(--tiles-bg)
+}
+
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 800px;
+  font-family: sans-serif;
+}
+th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  vertical-align: top;
+  word-break: break-word;
+}
+th {
+  background-color: #eee;
+  font-weight: bold;
+  text-align: left;
+}
+
+

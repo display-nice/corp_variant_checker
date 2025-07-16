@@ -1,0 +1,16 @@
+:root {
+	/* --main-bg: white; */
+	--body-bg: rgb(213, 218, 208);
+	--main-bg: rgb(236, 239, 239);
+	--tiles-bg: rgb(251, 251, 251);
+	--borders: #525960;
+	--borders-ok: #5faf2d;
+	--borders-fail: #ef3c39;
+	--corp-accent: #5faf2d;
+	--reset-btn: #4376af;
+	--reset-btn-hover: #4b82c0;
+	--bg-ok: #b6f2ab;
+	--bg-fail: #fdb6b0;
+	--bg-wrn: #fedea9;
+	--bg-info: #a9d4fe;
+}

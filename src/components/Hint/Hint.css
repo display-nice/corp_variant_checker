@@ -1,0 +1,134 @@
+.hint {
+	position: fixed;
+	top: 5%;
+	z-index: 1000;
+}
+.hint__wrapper {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	gap: 20px;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	position: relative;
+}
+.hint__btn {
+	position: relative;
+	background: none;
+	padding: 0;
+	border: 0;
+	width: 40px;
+	height: 40px;
+}
+.hint__icon {
+	border-radius: 8px;
+	background: #eddbb1;
+}
+.hint__header {
+	font-size: 17px;
+}
+.hint__description {
+	padding: 8px;
+	background-color: #eddbb1;
+	border: 2px solid black;
+	border-radius: 10px;
+	width: 420px;
+	position: absolute;
+	left: -880px;
+	-webkit-transition-property: left;
+	transition-property: left;
+	-webkit-transition-duration: 0.2s;
+	transition-duration: 0.2s;
+}
+.hint__description--active {
+	left: 80px;
+}
+.hint__list {
+	margin-top: 10px;
+	margin-left: 20px;
+}
+.hint__item {
+	list-style: square !important;
+	padding: 2px;
+	font-size: 15px;
+	font-weight: 400;
+}
+.hint__pointer {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	gap: 10px;
+	padding: 5px;
+	background-color: #eddbb1;
+	border: 2px solid black;
+	border-radius: 5px;
+	font-size: 17px;
+	font-weight: 700;
+	position: fixed;
+	left: 400px;
+	-webkit-transition-property: left;
+	transition-property: left;
+	-webkit-transition-duration: 0.2s;
+	transition-duration: 0.2s;
+}
+.hint__pointer--hidden {
+	left: -480px !important;
+}
+.hint__pointer-close {
+	padding: 1px;
+}
+
+@media (max-width: 1400px) {
+	.hint__pointer {
+		left: 80px;
+	}
+}
+
+@media (max-width: 909px) {
+	.hint {
+		top: 0.3%;
+	}
+	.hint__wrapper {
+		gap: 5px;
+		-webkit-box-align: start;
+		-ms-flex-align: start;
+		align-items: start;
+	}
+	.hint__btn {
+		width: 37px;
+		height: 37px;
+	}
+	.hint__btn svg {
+		width: 37px;
+		height: 37px;
+	}
+	.hint__description {
+		left: -300px;
+		max-width: 300px;
+	}
+	.hint__description--active {
+		left: 45px;
+	}
+	.hint__header {
+		font-size: 16px;
+	}
+	.hint__item {
+		padding: 1px;
+		font-size: 14px;
+	}
+	.hint__pointer {
+		max-width: 250px;
+		left: 45px;
+		gap: 5px;
+	}
+	.hint__pointer--hidden {
+		left: -300px;
+	}
+	.hint__pointer-text {
+		font-size: 14px;
+	}
+}

@@ -1,0 +1,103 @@
+.result {
+	text-align: center;
+	border: 2px solid var(--borders);
+	border-radius: 10px;
+}
+.result__container {
+	display: grid;
+	grid-template-areas:
+		"A A A"
+		"B B B"
+		"C D E";
+	grid-template-columns: 0.9fr 1.05fr 1.05fr;
+	margin: 0 20px;
+	align-items: start;
+	gap: 20px;
+}
+.result h2 {
+	grid-area: A;
+	height: 40px;
+	margin-top: 10px;
+}
+.result__status {
+	grid-area: B;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+	height: 100px;
+	border: 2px solid var(--borders);
+	border-radius: 10px;
+	font-weight: 500;
+}
+.result__status span {
+	display: block;
+}
+.result__status--ok {
+	background-color: var(--bg-ok);
+}
+.result__status--fail {
+	background-color: var(--bg-fail);
+}
+
+.result__variant {
+	display: flex;
+	flex-direction: column;
+	border-radius: 10px;
+}
+.result__variant li {
+	border-left: 1px solid var(--borders);
+	border-right: 1px solid var(--borders);
+	border-bottom: 1px solid var(--borders);
+	padding: 7px 7px;
+}
+.result__variant li:first-child {
+	font-weight: 700;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border: 2px solid var(--borders);
+}
+.result__variant li:last-child {
+	border-bottom: 1px solid var(--borders);
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+.result__variant--1 {
+	grid-area: C;	
+}
+.result__variant--2 {
+	grid-area: D;
+}
+.result__variant--3 {
+	grid-area: E;
+}
+
+.result__double-condition {
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+	min-height: 130px;
+	justify-content: center;
+}
+.result__subcondition {
+	border: 1px solid var(--borders);
+	border-radius: 8px;
+	padding: 4px 6px;
+	font-size: 15px;
+}
+
+.result__condition--ok {
+	background-color: var(--bg-ok) !important;
+}
+.result__condition--fail {
+	background-color: var(--bg-fail) !important;
+}
+
+.result__variant--ok li:first-child {
+	background-color: var(--bg-ok);
+}
+
+.result__variant--fail li:first-child {
+	background-color: var(--bg-fail);
+}
